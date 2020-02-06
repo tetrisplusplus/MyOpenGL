@@ -19,9 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Frustum.cpp" />
     <ClCompile Include="ViewPoint.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Frustum.h" />
     <ClInclude Include="ViewPoint.h" />
   </ItemGroup>
   <ItemGroup>
