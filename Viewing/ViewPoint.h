@@ -28,16 +28,4 @@ public:
 	void translate(glm::vec3 moved);
 
 	void rotate(float angle_in_degrees, glm::vec3 axis_in_global);
-
-
-public:
-	void move_longitudinal(float distance);
-	void move_vertical(float distance);
-	void move_horizontal(float distance);
-
-public:
-	void rotate_pitch(float angle_in_degrees);
-	void rotate_yaw(float angle_in_degrees);
-	void rotate_roll(float angle_in_degrees);
 };
-

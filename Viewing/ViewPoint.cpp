@@ -50,33 +50,3 @@ void ViewPoint::rotate(float angle_in_degrees, glm::vec3 axis_in_global)
 	this->v = rot3 * this->v;
 	this->w = rot3 * this->w;
 }
-
-void ViewPoint::move_longitudinal(float distance)
-{
-	this->translate(-distance * this->w);
-}
-
-void ViewPoint::move_vertical(float distance)
-{
-	this->translate(distance * this->v);
-}
-
-void ViewPoint::move_horizontal(float distance)
-{
-	this->translate(distance * this->u);
-}
-
-void ViewPoint::rotate_pitch(float angle_in_degrees)
-{
-	this->rotate(angle_in_degrees, this->u);
-}
-
-void ViewPoint::rotate_yaw(float angle_in_degrees)
-{
-	this->rotate(angle_in_degrees, this->v);
-}
-
-void ViewPoint::rotate_roll(float angle_in_degrees)
-{
-	this->rotate(angle_in_degrees, this->w);
-}
